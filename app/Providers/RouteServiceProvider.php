@@ -30,8 +30,7 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
-
+        \URL::forceScheme('https');
         parent::boot();
     }
 
