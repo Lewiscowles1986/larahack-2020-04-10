@@ -13,6 +13,11 @@
     }
   ],
   "env": {
+    "APP_NAME": {
+      "value": "",
+      "required": true,
+      "description": "The name of this app for Laravel. This does not have to match the name given above."
+    },
     "APP_URL": {
       "value": "",
       "required": true,
@@ -56,6 +61,9 @@
   "buildpacks": [
     {
       "url": "heroku/php"
+    },
+    {
+      "url": "heroku/nodejs"
     }
   ]
 }
