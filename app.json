@@ -34,7 +34,13 @@
       "value": "",
       "required": true,
       "description": "Setting this to the value of `echo $(php artisan --no-ansi key:generate --show)`"
-    }
+    },
+    "APP_LOG": "errorlog",
+    "APP_LOG_LEVEL": "error",
+    "BROADCAST_DRIVER": "redis",
+    "CACHE_DRIVER": "redis",
+    "SESSION_DRIVER": "redis",
+    "FILESYSTEM_DRIVER": "local"
   },
   "environments": {
     "review": {
