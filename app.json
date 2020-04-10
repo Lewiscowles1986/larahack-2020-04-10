@@ -9,7 +9,7 @@
     },
     {
       "plan": "cleardb:ignite",
-      "as": "DATABASE_URL" 
+      "as": "DATABASE" 
     }
   ],
   "env": {
