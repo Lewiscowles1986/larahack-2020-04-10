@@ -8,7 +8,7 @@
       "plan": "heroku-redis"
     },
     {
-      "plan": "cleardb:ignite",
+      "plan": "heroku-postgresql",
       "as": "DATABASE" 
     }
   ],
@@ -40,7 +40,8 @@
     "BROADCAST_DRIVER": "redis",
     "CACHE_DRIVER": "redis",
     "SESSION_DRIVER": "redis",
-    "FILESYSTEM_DRIVER": "local"
+    "FILESYSTEM_DRIVER": "local",
+    "DB_CONNECTION": "pgsql"
   },
   "environments": {
     "review": {
