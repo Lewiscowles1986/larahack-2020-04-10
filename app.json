@@ -1,0 +1,61 @@
+{
+  "name": "LaraHack Community project",
+  "description": "Larahack entry for a community project",
+  "keywords": ["larahack", "community", "2020", "lewiscowles", "essex-web-devs"],
+  "repository": "https://github.com/Lewiscowles1986/larahack-2020-04-10",
+  "addons": [
+    {
+      "plan": "heroku-redis"
+    },
+    {
+      "plan": "cleardb:ignite",
+      "as": "DATABASE_URL" 
+    }
+  ],
+  "env": {
+    "APP_URL": {
+      "value": "",
+      "required": true,
+      "description": "This is the base URL for this application"
+    },
+    "APP_DEBUG": {
+      "value": "false"
+    },
+    "APP_ENV": {
+      "value": "production",
+      "required": true
+    },
+    "APP_KEY": {
+      "value": "",
+      "required": true,
+      "description": "Setting this to the value of `echo $(php artisan --no-ansi key:generate --show)`"
+    }
+  },
+  "environments": {
+    "review": {
+      "env": {
+        "APP_DEBUG": {
+          "value": "true"
+        },
+        "APP_ENV": {
+          "value": "local"
+        }
+      }
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    },
+    "scheduler": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/php"
+    }
+  ]
+}

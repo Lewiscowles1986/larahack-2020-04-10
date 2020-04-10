@@ -1,5 +1,7 @@
 # LaraHack Community project
 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+
 ## Contributing
 
 Thank you for considering contributing to this application. Raise an issue, submit a PR. Be cool.
