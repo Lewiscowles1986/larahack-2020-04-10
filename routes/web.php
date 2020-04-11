@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+$routeOptions = [];
+if (env('DISABLE_REGISTRATION', 'false') == 'true') {
+    $routeOptions['register'] = false;
+}
+Auth::routes($routeOptions);
 
 Route::get('/home', 'HomeController@index')->name('home');

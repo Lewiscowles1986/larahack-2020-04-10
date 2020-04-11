@@ -56,7 +56,8 @@
         "CACHE_DRIVER": "redis",
         "SESSION_DRIVER": "redis",
         "FILESYSTEM_DRIVER": "local",
-        "DB_CONNECTION": "pgsql"
+        "DB_CONNECTION": "pgsql",
+        "DISABLE_REGISTRATION": true
       }
     }
   },
