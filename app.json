@@ -57,7 +57,8 @@
         "SESSION_DRIVER": "redis",
         "FILESYSTEM_DRIVER": "local",
         "DB_CONNECTION": "pgsql",
-        "DISABLE_REGISTRATION": true
+        "DISABLE_REGISTRATION": true,
+        "DEPLOYMENT_TYPE" : "review"
       }
     }
   },
