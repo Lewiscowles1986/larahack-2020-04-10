@@ -12,6 +12,7 @@
       "as": "DATABASE" 
     }
   ],
+  "stack": "heroku-20",
   "env": {
     "APP_NAME": {
       "value": "",
