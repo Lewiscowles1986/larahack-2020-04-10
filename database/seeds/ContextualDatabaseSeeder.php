@@ -6,13 +6,13 @@ use Illuminate\Database\Seeder;
 
 abstract class ContextualDatabaseSeeder extends Seeder
 {
-    const ANY = '*';
-    const REVIEW_ONLY = 'REVIEW';
-    const PRODUCTION_ONLY = 'PRODUCTION';
-    const LOCAL_DEV_ONLY = 'LOCAL';
-    const REVIEW_AND_LOCAL = 'REVIEW+LOCAL';
-    const REVIEW_AND_PRODUCTION = 'REVIEW+PRODUCTION';
-    const PRODUCTION_AND_LOCAL = 'PRODUCTION+LOCAL';
+    public const ANY = '*';
+    public const REVIEW_ONLY = 'REVIEW';
+    public const PRODUCTION_ONLY = 'PRODUCTION';
+    public const LOCAL_DEV_ONLY = 'LOCAL';
+    public const REVIEW_AND_LOCAL = 'REVIEW+LOCAL';
+    public const REVIEW_AND_PRODUCTION = 'REVIEW+PRODUCTION';
+    public const PRODUCTION_AND_LOCAL = 'PRODUCTION+LOCAL';
 
     protected $_branch_name = null;
     protected $_guarded_environment = self::ANY;
