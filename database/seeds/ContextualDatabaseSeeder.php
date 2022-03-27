@@ -1,5 +1,7 @@
 <?php
 
+namespace App\Seeds;
+
 use Illuminate\Database\Seeder;
 
 abstract class ContextualDatabaseSeeder extends Seeder
@@ -109,10 +111,10 @@ abstract class ContextualDatabaseSeeder extends Seeder
     protected function can_run_in_env() : bool
     {
         return (
-            $this->_guarded_environment === self::ANY || 
+            $this->_guarded_environment === self::ANY ||
             $this->review_app_only() || (
                 $this->production_or_local() && (
-                    $this->needs_production() || 
+                    $this->needs_production() ||
                     $this->local_compatible()
                 )
             )
@@ -121,7 +123,7 @@ abstract class ContextualDatabaseSeeder extends Seeder
 
     /**
      * Predicate checking utility
-     * 
+     *
      * This checks a set of rules to see if the seeder should run
      */
     public function guard() : bool
