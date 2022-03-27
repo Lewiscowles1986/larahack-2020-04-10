@@ -6,7 +6,7 @@ use PHPUnit\Framework\TestCase;
 use App\Seeds\ContextualDatabaseSeeder;
 
 class ContextualTestSeeder extends ContextualDatabaseSeeder {
-    const VALID_ENVIRONMENTS = [
+    public const VALID_ENVIRONMENTS = [
         ContextualDatabaseSeeder::ANY,
         ContextualDatabaseSeeder::REVIEW_ONLY,
         ContextualDatabaseSeeder::PRODUCTION_ONLY,

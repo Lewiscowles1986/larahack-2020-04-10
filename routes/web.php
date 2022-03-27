@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', fn() => view('welcome'));
 
 $routeOptions = [];
 if (env('DISABLE_REGISTRATION', 'false') == 'true') {
