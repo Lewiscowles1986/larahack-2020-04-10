@@ -46,7 +46,7 @@ class ContextualDatabaseSeederTest extends TestCase
      *
      * @return void
      */
-    public function testGuardClause($args, $result)
+    public function testGuardClause(array $args, bool $result)
     {
         $seeder = new ContextualTestSeeder(...$args);
         $this->assertEquals($seeder->guard(), $result);
